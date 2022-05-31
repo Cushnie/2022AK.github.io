@@ -66,8 +66,22 @@
             </div>
         </header>
         <!-- Post Content-->
+        <div class="row gx-4 gx-lg-5 justify-content-center" id="home">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <h3>Resources and Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="#currentwx">Weather Forecast</a></li>
+                </ul>
+            </div>
+        </div>  
 
-        <div class="row gx-4 gx-lg-5 justify-content-center">
+        <hr>
+        <hr>
+
+
+        <div class="row gx-4 gx-lg-5 justify-content-center" id="about">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <p>Juneau is Alaska’s closest “big” city to the Lower 48, which makes it surprisingly reachable any time of year. In just over a two-hour flight, Alaska Airlines can get you here on one of their daily flights from Seattle or Anchorage, multiple direct flights arrive daily. Charter, regional and major airlines all serve <a href="https://juneau.org/airport" target="_blank">Juneau International Airport</a>, Southeast Alaska’s air transport hub.</p>
         
@@ -75,8 +89,10 @@
                 
                 <p><i>Text courtesy of <a href="https://www.traveljuneau.com/" target="_blank">Travel Juneau</a></i></p></div>
         </div>
+<hr>
 
-        <article class="mb-4">
+        <article class="mb-4" id="map">
+            <h3>Map of the Area</h3>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -87,35 +103,29 @@
                 </div>
             </div>
         </article>
-
+<hr>
         <!-- the DIV that will contain the widget -->
 
-    <div class="row gx-4 gx-md-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-        <div class="weatherWidget" ></div>
-        </div>  
-</div>
-
-        <script>
-            window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-            window.weatherWidgetConfig.push({
-                selector:".weatherWidget",
-                apiKey:"E5Z397AVAWNRC947SXGP2YGWP", //Sign up for your personal key
-                location:"Juneau, AK", //Enter an address
-                unitGroup:"us", //"us" or "metric"
-                forecastDays:5, //how many days forecast to show
-                title:"Current Weather", //optional title to show in the 
-                showTitle:true, 
-                showConditions:true
-            });
-           
-            (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-         </script>
+    <div class="row gx-4 gx-md-5 justify-content-center" id="currentwx">
+        <div class="col-md-10 col-lg-8 col-xl-7" >
+            <div class="weatherWidget"  style="background-color: #ffffff99;height: 175px;"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+            <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css">
+            <script>
+              window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+              window.weatherWidgetConfig.push({
+               selector:".weatherWidget",
+               apiKey:"E5Z397AVAWNRC947SXGP2YGWP",
+               location:"Juneau, AK",
+                unitGroup:"us"
+               });
+               (function() {
+                 var d = document, s = d.createElement('script');
+                 s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js';
+                 s.setAttribute('data-timestamp', +new Date());
+                 (d.head || d.body).appendChild(s);
+                            })();
+            </script>
          <p></p>
 
 
