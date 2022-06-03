@@ -66,20 +66,26 @@
             </div>
         </header>
         <!-- Post Content-->
-        <div class="row gx-4 gx-lg-5 justify-content-center" id="home">
-            <div class="col-md-10 col-lg-8 col-xl-7">
-                <h3>Resources and Links</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#map">Map</a></li>
-                    <li><a href="#currentwx">Weather Forecast</a></li>
+        <main class="mb-4" id="top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h1 class="my-4">Resources and Links<small></small>
+                        </h1>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <!--- <li class="nav-item"><a class="nav-link" href="#todo">Activities</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#transit">Transportation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#currentwx">Weather</a></li>
                 </ul>
             </div>
-        </div>  
+        </div> 
+        </div> 
 
+    
         <hr>
-        <hr>
-
+        <div class="container">
 
         <div class="row gx-4 gx-lg-5 justify-content-center" id="about">
             <div class="col-md-10 col-lg-8 col-xl-7">
@@ -87,27 +93,50 @@
         
                 <p>Cruising remains the most popular way to explore the Inside Passage; Juneau is a port of call for large and small lines, alike. For the independent traveler, the state-run Alaska Marine Highway ferry system serves more than 30 coastal communities. A true adventure, the 1500-mile Alaska-Canadian Highway—aka the “ALCAN”—crosses some of the world’s wildest country. But of course, any road trip to Juneau necessitates a leg at sea; the only “road” in is the Alaska Marine Highway.  </p> 
                 
-                <p><i>Text courtesy of <a href="https://www.traveljuneau.com/" target="_blank">Travel Juneau</a></i></p></div>
+                <p><i>Text courtesy of <a href="https://www.traveljuneau.com/" target="_blank">Travel Juneau</a></i></p><a href="#top">Back to top</a></div>
+                
         </div>
 <hr>
 
-        <article class="mb-4" id="map">
-            <h3>Map of the Area</h3>
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
+<!--- <div class="row gx-4 gx-lg-5 justify-content-center" id="todo">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>This is where we put some information about activities in the area.</p>
+        <a href="#top">Back to top</a>
+    
+    </div>
+        
+</div>
+<hr> ---> 
+
+<div class="row gx-4 gx-lg-5 justify-content-center" id="transit">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4>Transit Options</h4>
+        <p>If you're not renting a car in Juneau, you have a few options for getting around when you arrive at the airport - <a href="https://www.lyft.com/rider/cities/juneau-ak" target="_blank">Lyft</a>, <a href="https://www.uber.com/global/en/cities/juneau/" target="_blank">Uber</a> and the local taxi cab companies. Should you opt for public transit, you can plan your trip at <a href="https://juneaucapitaltransit.org/" target="_blank">Capital Transit</a>. </p> 
+        <a href="#top">Back to top</a>
+    </div>
+
+</div>
+<hr>
+        <article class="row gx-4 gx-lg-5 justify-content-center" id="map">
+              
                     <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h4>Map of the Area</h4>
                         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123026.08803001372!2d-134.49384233726673!3d58.30459974335436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400de6c6f6a3a8f%3A0x65ef25aae69f311!2sJuneau%2C%20AK!5e0!3m2!1sen!2sus!4v1641341297872!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
  
-                            
+                        <a href="#top">Back to top</a>
                     </div>
-                </div>
+                
             </div>
+            
         </article>
+
+    
 <hr>
         <!-- the DIV that will contain the widget -->
 
     <div class="row gx-4 gx-md-5 justify-content-center" id="currentwx">
         <div class="col-md-10 col-lg-8 col-xl-7" >
+            <h4>Weather</h4>
             <div class="weatherWidget"  style="background-color: #ffffff99;height: 175px;"></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
             <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css">
@@ -126,7 +155,9 @@
                  (d.head || d.body).appendChild(s);
                             })();
             </script>
-         <p></p>
+         <p><a href="#top">Back to top</a></p>
+         </div>
+         </div> 
 
 
         
